@@ -36,3 +36,19 @@
   .spacer-20 { height: 10px; }
   .spacer-50 { height: 25px; }
 }
+
+.columns-2 > .blog-item {
+  grid-column: span 6;
+  align-self: start;
+}
+@media (max-width: 768px) {
+  .columns-2 > .blog-item {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 769px) {
+  .columns-2 > .blog-item {
+    grid-column: span 6;
+  }
+}
