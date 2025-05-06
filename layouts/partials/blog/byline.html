@@ -1,4 +1,8 @@
-{{- $date := .Date.Format "January 2, 2006" }}
+{{- $date := .Date.Format "02 janvier 2006" }}
+{{ $monthsFr := dict "January" "janvier" "February" "février" "March" "mars" "April" "avril" "May" "mai" "June" "juin" "July" "juillet" "August" "août" "September" "septembre" "October" "octobre" "November" "novembre" "December" "décembre" }}
+{{ $month := index $monthsFr (.Date.Format "January") }}
+{{ $day := .Date.Format "02" }}
+{{ $year := .Date.Format "2006" }}
 {{- $allAuthors := .Site.Data.authors }}
 {{- $authorKey := .Params.author }}
 {{- $authorData := index $allAuthors $authorKey }}
@@ -6,7 +10,7 @@
 <div class="blog-item__byline">
   <p>
     {{ if $date }}
-      <span class="blog-item__date">{{ $date }}</span>
+      <span class="blog-item__date">{{ $day }} {{ $month }} {{ $year }}</span>
     {{ end }}
     {{ if $authorData }}
       <span class="blog-item__author"
