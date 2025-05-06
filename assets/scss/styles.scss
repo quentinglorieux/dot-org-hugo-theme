@@ -24,3 +24,15 @@
 @import "shortcodes/toc";
 @import "shortcodes/intro";
 @import "shortcodes/youtube-enhanced";
+
+
+
+.spacer-5 { height: 5px; }
+.spacer-20 { height: 20px; }
+.spacer-50 { height: 50px; }
+
+@media (max-width: 1000px) {
+  .spacer-5 { height: 2.5px; }
+  .spacer-20 { height: 10px; }
+  .spacer-50 { height: 25px; }
+}
