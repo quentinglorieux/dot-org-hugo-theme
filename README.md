@@ -225,7 +225,7 @@ Options:
 Inserts an image in a more advanced format than standard Hugo syntax.
 
 ```
-{{< img src="/img/blog/image-name.png" >}}
+{{< img src="/uploads/blog/image-name.png" >}}
 ```
 
 Options: 

@@ -15,23 +15,23 @@ The [Dot Org Theme](https://github.com/cncf/dot-org-hugo-theme) has been created
 {{< /column >}}
 {{< column >}}
 {{< spacer >}}
-{{< img src="/img/placeholder.svg" loading="eager" >}}
+{{< img src="/uploads/placeholder.svg" loading="eager" >}}
 {{< /column >}}
 {{< /columns >}}
 
 {{< columns count=3 >}}
 {{< column >}}
-{{< img src="/img/placeholder.svg" >}}
+{{< img src="/uploads/placeholder.svg" >}}
 ### Free & open source
 The Dot-Org theme is a free and open source theme for Hugo CMS. Use it however you want 🏠 🧱
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/placeholder.svg" >}}
+{{< img src="/uploads/placeholder.svg" >}}
 ### Fast & full-featured
 HTML/CSS/JS written from scratch. No frameworks, no libraries, perfect site speed scores 🚀 🧨
 {{< /column >}}
 {{< column >}}
-{{< img src="/img/placeholder.svg" >}}
+{{< img src="/uploads/placeholder.svg" >}}
 ### Accessible & multilingual
 Supports multiple languages out of the box. Aims to comply with WCAG 2.1 standards 🌐 👁️‍🗨️
 {{< /column >}}
