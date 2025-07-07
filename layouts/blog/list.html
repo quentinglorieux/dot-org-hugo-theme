@@ -1,12 +1,30 @@
 {{ define "main" }}
   {{ .Content }}
+
   {{ $paginator := .Paginate .Pages }}
   {{- range $paginator.Pages }}
-      <article class="blog-item">
-        <h2 class="blog-item__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        {{- partial "blog/byline.html" . }}
-        <p class="blog-item__summary">{{ .Summary | plainify }}</p>
-      </article>
+
+    <article class="blog-item">
+      {{- with .Params.image }}
+      <figure class="blog-item__image half-column-right">
+        <a href="{{ $.RelPermalink }}">
+          <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        </a>
+      </figure>
+      {{- end }}
+
+      <h2 class="blog-item__title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+
+      {{- partial "blog/byline.html" . }}
+
+      <p class="blog-item__summary">
+        {{ .Summary | plainify }}
+      </p>
+    </article>
+
   {{ end }}
+
   {{ template "_internal/pagination.html" . }}
 {{ end }}

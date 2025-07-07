@@ -8,3 +8,4 @@
 {{ end }}
 {{ $style := resources.Get $source | css.Sass $options | css.PostCSS (dict "config" "postcss.config.js") | resources.Fingerprint "sha512" }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="all">
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}" media="all">
