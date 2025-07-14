@@ -8,7 +8,7 @@
       {{- with .Params.image }}
       <figure class="blog-item__image half-column-right">
         <a href="{{ $.RelPermalink }}">
-          <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+          <img class="img_blog" src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
         </a>
       </figure>
       {{- end }}
